@@ -7,7 +7,7 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "cypress open"
+    "test": "cypress run"
   },
   "author": "",
   "license": "ISC",
