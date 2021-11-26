@@ -46,6 +46,7 @@ jobs:
         run: |
           sudo chmod +x bin/cake
           bin/cake server &
+          npm i
           npm run test
     
 #       - name: Use Node.js ${{ matrix.node-version }}
