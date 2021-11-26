@@ -45,9 +45,7 @@ jobs:
       - name: serve cakephp
         run: |
           sudo chmod +x bin/cake
-          bin/cake server &
-          npm i
-          npm run test
+          bin/cake server
     
 #       - name: Use Node.js ${{ matrix.node-version }}
 #         uses: actions/setup-node@v2
