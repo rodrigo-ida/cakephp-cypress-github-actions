@@ -34,13 +34,13 @@ jobs:
           composer install --no-progress --prefer-dist --optimize-autoloader
           composer run-script post-install-cmd --no-interaction
           
-      - name: Cypress run
-        uses: cypress-io/github-action@v2
-        with:
-          wait-on: "http://localhost:8765"
-          # let's see if the Test Runner handles url in the config
-          # https://github.com/cypress-io/cypress/issues/5466
-          config: baseUrl=http://localhost:8765
+#       - name: Cypress run
+#         uses: cypress-io/github-action@v2
+#         with:
+#           wait-on: "http://localhost:8765"
+#           # let's see if the Test Runner handles url in the config
+#           # https://github.com/cypress-io/cypress/issues/5466
+#           config: baseUrl=http://localhost:8765
           
       - name: serve cakephp
         run: |
