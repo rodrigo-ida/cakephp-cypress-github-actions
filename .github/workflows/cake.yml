@@ -35,7 +35,7 @@ jobs:
           composer run-script post-install-cmd --no-interaction
           
       - name: serve cakephp
-        run: sudo bin/cake server
+        run: bin/cake server
     
 #       - name: Use Node.js ${{ matrix.node-version }}
 #         uses: actions/setup-node@v2
