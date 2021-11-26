@@ -45,7 +45,7 @@ jobs:
       - name: serve cakephp
         run: |
           sudo chmod +x bin/cake
-          bin/cake server
+          bin/cake server &
           npm run cypress
     
 #       - name: Use Node.js ${{ matrix.node-version }}
