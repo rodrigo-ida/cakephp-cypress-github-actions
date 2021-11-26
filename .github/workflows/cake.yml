@@ -35,7 +35,7 @@ jobs:
           composer run-script post-install-cmd --no-interaction
           
       - name: serve cakephp
-        run: 
+        run: |
           sudo chmod +x bin/cake
           bin/cake server
     
