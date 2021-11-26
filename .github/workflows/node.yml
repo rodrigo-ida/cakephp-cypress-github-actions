@@ -29,7 +29,7 @@ jobs:
     - name: Cypress run
       uses: cypress-io/github-action@v2
       with:
-        start: "npm run start:ci"
+        start: "npm run test"
         wait-on: "http://localhost:8765"
         # let's see if the Test Runner handles url in the config
         # https://github.com/cypress-io/cypress/issues/5466
