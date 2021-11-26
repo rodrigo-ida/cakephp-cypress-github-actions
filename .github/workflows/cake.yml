@@ -46,7 +46,7 @@ jobs:
         run: |
           sudo chmod +x bin/cake
           bin/cake server &
-          npm run cypress
+          npm run test
     
 #       - name: Use Node.js ${{ matrix.node-version }}
 #         uses: actions/setup-node@v2
