@@ -33,10 +33,10 @@ jobs:
         run: |
           composer install --no-progress --prefer-dist --optimize-autoloader
           composer run-script post-install-cmd --no-interaction
-#     steps:
-#       - name: serve cakephp
-#         with:
-#           start: "bin/cake server"
+          
+      - name: serve cakephp
+        with:
+          start: "bin/cake server"
     
 #       - name: Use Node.js ${{ matrix.node-version }}
 #         uses: actions/setup-node@v2
