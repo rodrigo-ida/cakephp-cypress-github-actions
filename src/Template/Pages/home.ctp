@@ -47,5 +47,7 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
 <body class="home">
 
     <h1 id="title">title</h1>
+    <h1 id="coisa">coisa1</h1>
+
 </body>
 </html>
